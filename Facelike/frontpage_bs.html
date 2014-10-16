@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Facelike: A simple, advertisement free web site</title>
+		
+		<!-- Libraries -->
+		<script src="external/js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="external/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="external/css/bootstrap-cyborg.css">
+		
+		<!--
+		 
+		<link rel="stylesheet" type="text/css" href="external/css/bootstrap-theme.css">
+		-->
+		
+		
+		<!-- Facelike-wide JS/CSS -->
+		<link rel="stylesheet" type="text/css" href="css/facelike.css">
+		
+		<!-- Page-Specific JS/CSS -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/frontpage_bs.css"> -->
+		
+		
+		
+		<style>
+			/* Panel: receives style that used to be placed on .frame */
+			.panel {border-bottom-left-radius: 2em; border-width:2pt;}
+			.panel:hover 
+		</style>
+	</head>
+
+	<body>
+		
+		<!-- Section: Header -->
+		<div class="jumbotron section" id="section-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-heading">
+							<h1 class="text-center">Facelike:</h1>
+							<h3 class="text-center">An Advertisement Infested Web-site</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Section: Users -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-info" id="panel-users">
+						<div class="panel-heading">
+							<h2>Users</h2>
+						</div>
+						<div class="panel-body">
+							<!-- 'Column' Titles -->
+							<div class="panel-column-titles">
+								<div class="user-entry user-entry-titles" id="user-titles">
+									<div class="row">
+										<div class="col-sm-2">
+											<div class="user-entry-name"><strong>Name</strong></div>
+										</div>
+										<div class="col-sm-2">
+											<div class="user-entry-level"><strong>Privileges</strong></div>
+										</div>
+									</div>
+								</div>
+								<hr>
+							</div>
+
+							<!-- Template for user-entry: remove class 'template' after copying -->
+							<div class="user-entry template">
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="user-entry-name">{{name}}</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="user-entry-level">{{level}}</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- User Entries -->
+							<div class="user-entry">
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="user-entry-name">Ian</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="user-entry-level">Admin</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="user-entry">
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="user-entry-name">Oak</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="user-entry-level">User</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="user-entry">
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="user-entry-name">Rax</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="user-entry-level">Mod</div>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Section: Posts -->		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-success" id="panel-posts">
+						<div class="panel-heading">
+							<h2>Posts</h2>
+						</div>
+						<div class="panel-body">
+							<!-- 'Column' Titles -->
+							<div class="panel-column-titles">
+								<div class="post-entry post-entry-titles" id="user-titles">
+									<div class="row">
+										<div class="col-sm-2">
+											<div class="post-entry-title"><strong>Title</strong></div>
+										</div>
+										<div class="col-sm-2">
+											<div class="post-entry-id"><strong>ID</strong></div>
+										</div>
+										<div class="col-sm-8">
+											<div class="post-entry-body"><strong>Body</strong></div>
+										</div>
+									</div>
+								</div>
+								<hr>
+							</div>
+
+							<!-- Template for post-entry: remove class 'template' after copying -->
+							<div class="post-entry template">
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="post-entry-title">{{title}}</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="post-entry-id">{{id}}</div>
+									</div>
+									<div class="col-sm-8">
+										<div class="post-entry-body">{{body}}</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Section: Comments -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-warning" id="panel-comments">
+						<div class="panel-heading">
+							<h2>Comments</h2>
+						</div>
+						<div class="panel-body">
+							<!-- 'Column' Titles -->
+							<div class="panel-column-titles">
+								<div class="comment-entry comment-entry-titles" id="user-titles">
+									<div class="row">
+										<div class="col-sm-2">
+											<div class="comment-entry-title"><strong>User</strong></div>
+										</div>
+										<div class="col-sm-2">
+											<div class="comment-entry-id"><strong>ID</strong></div>
+										</div>
+										<div class="col-sm-8">
+											<div class="comment-entry-body"><strong>Body</strong></div>
+										</div>
+									</div>
+								</div>
+								<hr>
+							</div>
+
+							<!-- Template for comment-entry: remove class 'template' after copying -->
+							<div class="comment-entry template">
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="comment-entry-title">{{user}}</div>
+									</div>
+									<div class="col-sm-2">
+										<div class="comment-entry-id">{{id}}</div>
+									</div>
+									<div class="col-sm-8">
+										<div class="comment-entry-body">{{body}}</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
