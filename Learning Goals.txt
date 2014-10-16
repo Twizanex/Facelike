@@ -1,0 +1,23 @@
+Shit What Ian needs to get used to
+
+
+[] IDE: Eclipse
+[] Languages:
+	[] Python
+	[] Web: HTML/CSS
+	[] Web: Javascript
+		[] JQuery, Underscore.js
+[] Version Control: git
+[] Testing: unittest
+[] Framework: TBA (Flask? Django? CherryPy?)
+[] Web Graphics: Bootstrap.js
+
+
+
+The Plan:
+() Ian: Get webpage 'blank' frame working: List users + list posts
+	() Make fake data 
+() Oakland: Find framework for handling python AJAX calls
+() Ian: learn what AJAX is, and how to do it from Javascript
+() Ian: code in classes for Users + Posts
+() Ian: Get page to display data from classes: Users + Posts
