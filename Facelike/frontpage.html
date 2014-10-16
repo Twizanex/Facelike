@@ -3,27 +3,36 @@
 	<head>
 		<title>Facelike: A simple, advertisement free web site</title>
 		<style>
-		  body {background-color:brown; color:white; }
-		  body > * {margin-left:100px;}
-		  .frame {background-color:black; width:600px; border:1pt solid teal; }
-		  #user-frame {background-color:black}
-		  #post-frame {background-color:black}
+		  body {background-color:DarkCyan; color:white; }
+		  body > * {margin-left:0px;}
+		  .frame {background-color:blue; width:600px; border:2pt solid white; border-bottom-color: #Blue; border-bottom-left-radius: 2em; padding: 10px}
+		  #header-frame {background-color:teal; width:100%; height:60px; font-size:36px; text-align:center}
+		  #user-frame {background-color:DodgerBlue; width:100%; }
+		  #comment-frame {background-color:#3399CC; width:100%; height:20px; }
+		  #last-frame {background-color:SteelBlue; width:100%; height:20px}
 		  .template {display:none;}
 		  .user-entry
 		  #user-ian
+		  #user-oak
+		  #user-rax
 		  .user-name
 		  .user-level
+		  #user-admin
+		  #user-mod
+		  #user-user
 		</style>
 	</head>
 
 	<body>
-		
-		<div class="frame">
-			4 frames, 1 title, 3 users, and 3 comments per user makes me get an A in this project
+
+		<div class="frame" id="header-frame">
+			Facelike: An Advertisement Infested Web-site
 		</div>
 		
-		<div class="frame" id="user-frame">
+		<br>
 		
+		<div class="frame" id="user-frame">
+				Users:
 			<div class="user-entry" id="user-ian">
 				<div class="user-entry-name"> ian </div>
 				<div class="user-entry-level"> admin </div>
@@ -41,23 +50,32 @@
 			
 		</div>
 		
-		<div class="frame" id="post-frame">
-			Post User List
+		<br>
+		
+		<div class="frame" id="comment-frame">
+			Comment Frame
 		</div>
 		
-		<div class="frame">
-			This is the bttm frame 5th Note Goat
+		<br>
+		
+		<div class="frame" id="last-frame">
+			This is the bttm frame 4th Note Goat
 		</div>
 		
+		<br>
 		
 		<div class="template" id="user-template">
 			<div>UserName</div>
 			<div>UserLevel</div>
 		</div>
+		
+		<br>
+		
 		<div class="template" id="post-template">
 			<h3>PostTitle</h3>
 			<div>PostBody</div>
 		</div>
+		
 	</body>
 
 </html>
